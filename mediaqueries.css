@@ -1,0 +1,10 @@
+@media (max-width: 768px) {
+    section {
+        margin: 0 2rem;
+        flex-direction: column;
+    }
+    .section__text {
+        text-align: left;
+    }
+}
+
