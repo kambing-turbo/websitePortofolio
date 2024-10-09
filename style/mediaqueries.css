@@ -97,8 +97,13 @@
     #getin-touch{
         display: flex;
         width: 100vw;
+        height: fit-content;
         flex-direction: column;
         gap: 0;
+    }
+
+    .getin-touch{
+        height: fit-content;
     }
 
     .footer-container hr {
@@ -233,7 +238,7 @@
     #getin-touch{
         width: 100vw;
         flex-direction: column;
-        gap: 0;
+        height: fit-content;
     }
 
     .footer-container hr {
