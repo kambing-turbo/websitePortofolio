@@ -4,8 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Daffa Safriel</title>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="mediaqueries.css">
+<link rel="stylesheet" href="style/1reset.css">
+<link rel="stylesheet" href="style/2section.css">
+<link rel="stylesheet" href="style/3profile.css">
+<link rel="stylesheet" href="style/4about.css">
+<link rel="stylesheet" href="style/5project.css">
+<link rel="stylesheet" href="style/6getinTouch.css">
+<link rel="stylesheet" href="style/7footer.css">
+<link rel="stylesheet" href="style/mediaqueries.css">
 <link rel="icon" type="image/png" href="./assets/icon_HP.png">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
@@ -23,26 +29,27 @@
         <h1 class="title"> Daffa Safriel</h1>
         <p class="section__text__p2">I'm an Automation Engineer</p>
         <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
-    <div class="btn-container">
-        <a href="./assets/resume.pdf" target="_blank">
-            <button class="btn btn-color-2">
-                Download CV
+        <div class="btn-container">
+            <a href="./assets/resume.pdf" target="_blank">
+                <button class="btn btn-color-2">
+                    Download CV
+                </button>
+            </a>
+            <button class="btn btn-color-1" onclick="scrollToFooter()">
+                Contact Info
             </button>
-        </a>
-        <button class="btn btn-color-1" onclick="scrollToFooter()">
-            Contact Info
-        </button>
+        </div>
+        <div id="socials-container">
+            <img src="./assets/linkedin.png" alt="My linkedin profile"
+            class="icon" onclick="location.href='https://www.linkedin.com/in/daffa-safriel'">
+            <img src="./assets/github.png" alt="My github profile"
+            class="icon" onclick="location.href='https://github.com/kambing-turbo'">
+        </div>
     </div>
-    <div id="socials-container">
-        <img src="./assets/linkedin.png" alt="My linkedin profile"
-        class="icon" onclick="location.href='https://www.linkedin.com/in/daffa-safriel'">
-        <img src="./assets/github.png" alt="My github profile"
-        class="icon" onclick="location.href='https://github.com/kambing-turbo'">
-    </div>
-    <a class="scroll-down-link" aria-label="scroll-down" style="visibility: visible;">
+    <div class="scroll-down-link" aria-label="scroll-down" style="visibility: visible;">
         <div class="scroll-down">
         </div>
-    </a>    
+    </div>    
 </section>
 <section id="about">
     <div class="about__text">

@@ -1,0 +1,271 @@
+/* Media Queries */
+@media (max-width: 475px) {
+    section {
+        flex-direction: column; /* Ubah layout menjadi kolom */
+        margin: 0px 0; /* Mengurangi margin untuk layar kecil */
+
+        margin-top: 0;
+    }
+
+    #profile{
+        margin-top: 5rem;
+        height: 100vh;
+        width: 100vw;
+        gap: 30px;
+    }
+
+    .section__pic-container{
+        height: 200px;
+        width: 200px;
+        align-content: center;
+    }
+
+    .section__text__p1{
+        font-size: 0.75rem;
+    }
+
+    .section__text__p2{
+        font-size: 1.5rem;
+    }
+
+    .title {
+        font-size: 1.8rem; /* Mengurangi ukuran font judul */
+    }
+
+    .btn {
+        padding: 0.5rem; /* Mengurangi padding tombol */
+        width: 7rem; /* Mengurangi lebar tombol */
+    }
+
+    .scroll-down {
+        height: 30px; /* Mengurangi ukuran scroll-down */
+        width: 20px; /* Mengurangi ukuran scroll-down */
+    }
+
+    .scroll-down::before, .scroll-down::after {
+        height: 8px; /* Mengurangi ukuran panah */
+        width: 8px; /* Mengurangi ukuran panah */
+    }
+
+    #about{
+        margin-top: 5rem;
+        width: 100vw;
+        gap: 30px;
+        flex-direction: column;
+    }
+
+    .about__section__text__p1{
+        font-size: 0.75rem;
+        margin: 10px;
+        text-align: center;
+    }
+
+    #project{
+        width: 100vw;
+    }
+
+    .project-container{
+        border: 2px solid gray;
+        margin: 10px 10px;
+        border-radius: 20px;
+        padding: 10px;
+    }
+
+    .project-pic-container{
+        align-items: center;    
+    }
+
+    .project-pic{
+        width: 200px;
+        height: 200px;
+    }
+
+    .project-text-container{
+        margin: 0px 25px;
+    }
+
+    .project-text-title{
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .project-text{
+        text-align: justify;
+    }
+
+    #getin-touch{
+        width: 100vw;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .footer-container hr {
+        width: 90%; /* Mengurangi lebar garis pemisah di footer */
+    }
+
+    .project-container {
+        flex-direction: column; /* Ubah layout proyek menjadi kolom */
+        align-items: center; /* Rata tengah konten proyek */
+    }
+
+    .contact-container2{
+        width: 90vw;
+        margin: auto;
+    }
+
+    .contact-container{
+        width: 90vw;
+        margin: auto;
+    }
+
+    .contact-left{
+        width: 90vw;
+        margin: auto;
+    }
+
+    #footer{
+        width: 100vw;
+        height: fit-content;
+        padding: 0;
+    }
+
+    .footer-container{
+        padding: 20px 0;
+    }
+
+}
+
+@media (max-width: 770px) {
+    section {
+        flex-direction: column; /* Ubah layout menjadi kolom */
+        margin: 0px 0; /* Mengurangi margin untuk layar kecil */
+
+        margin-top: 0;
+    }
+
+    #profile{
+        margin-top: 5rem;
+        height: 100vh;
+        width: 100vw;
+        gap: 30px;
+    }
+
+    .section__pic-container{
+        height: 200px;
+        width: 200px;
+        align-content: center;
+    }
+
+    .section__text__p1{
+        font-size: 0.75rem;
+    }
+
+    .section__text__p2{
+        font-size: 1.5rem;
+    }
+
+    .title {
+        font-size: 1.8rem; /* Mengurangi ukuran font judul */
+    }
+
+    .btn {
+        padding: 0.5rem; /* Mengurangi padding tombol */
+        width: 7rem; /* Mengurangi lebar tombol */
+    }
+
+    .scroll-down {
+        height: 30px; /* Mengurangi ukuran scroll-down */
+        width: 20px; /* Mengurangi ukuran scroll-down */
+    }
+
+    .scroll-down::before, .scroll-down::after {
+        height: 8px; /* Mengurangi ukuran panah */
+        width: 8px; /* Mengurangi ukuran panah */
+    }
+
+    #about{
+        margin-top: 5rem;
+        width: 100vw;
+        gap: 30px;
+        flex-direction: column;
+    }
+
+    .about__section__text__p1{
+        font-size: 0.75rem;
+        margin: 10px;
+        text-align: center;
+    }
+
+    #project{
+        width: 100vw;
+    }
+
+    .project-container{
+        border: 2px solid gray;
+        border-radius: 20px;
+        padding: 10px;
+    }
+
+    .project-pic-container{
+        align-items: center;    
+    }
+
+    .project-pic{
+        width: 200px;
+        height: 200px;
+    }
+
+    .project-text-container{
+        margin: 0px 25px;
+    }
+
+    .project-text-title{
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .project-text{
+        text-align: justify;
+    }
+
+    #getin-touch{
+        width: 100vw;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .footer-container hr {
+        width: 90%; /* Mengurangi lebar garis pemisah di footer */
+    }
+
+    .project-container {
+        flex-direction: column; /* Ubah layout proyek menjadi kolom */
+        align-items: center; /* Rata tengah konten proyek */
+    }
+
+    .contact-container2{
+        width: 90vw;
+        margin: auto;
+    }
+
+    .contact-container{
+        width: 90vw;
+        margin: auto;
+    }
+
+    .contact-left{
+        width: 90vw;
+        margin: auto;
+    }
+
+    #footer{
+        width: 100vw;
+        height: fit-content;
+        padding: 0;
+    }
+
+    .footer-container{
+        padding: 20px 0;
+    }
+
+}

@@ -1,0 +1,98 @@
+
+/* GET IN TOUCH */
+
+.getin-touch{
+    height: 25rem;
+    width: 77.25vw;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 3rem;
+}
+
+.contact-container{
+    width: 30rem;
+    margin-top: 2rem;
+}
+
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+.contact-left-title{
+    align-self:center;
+}
+
+.contact-inputs{
+    border-radius: 50px;
+    height: 2.4rem;
+    padding-left: 15px;
+    margin: 5px;
+    align-items: center;
+    border: 2px solid #000;
+}
+
+.contact-inputs-message{
+    border-radius: 20px;
+    height: 8.7rem;
+    padding-left: 15px;
+    padding-top: 5px;
+    margin: 5px;
+    border: 2px solid #000;
+}
+
+.contact-left .btn{
+    align-self: self-start;
+    width: 6rem;
+    border-radius: 30px;
+    margin: 5px;
+}
+
+.contact-container2{
+    height: fit-content;
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    border-radius:20px;
+    background-color: #333;
+    margin-top: 2rem;
+}
+
+.text-contact-container2{
+    color: white;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.contact-social-container{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 20px;
+}
+
+.contact-social-container i{
+    font-size: 1.7rem;
+}
+
+.contact-social-container2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contact-social-container2 p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.contact-social-container2 i:hover{
+    transform: scale(1.1);
+}
+
+.contact-social-container2 p:hover{
+    text-decoration: underline;
+}
