@@ -1,6 +1,7 @@
 /* Media Queries */
 @media (max-width: 475px) {
     section {
+        display: flex;
         flex-direction: column; /* Ubah layout menjadi kolom */
         margin: 0px 0; /* Mengurangi margin untuk layar kecil */
 
@@ -94,6 +95,7 @@
     }
 
     #getin-touch{
+        display: flex;
         width: 100vw;
         flex-direction: column;
         gap: 0;
@@ -137,9 +139,9 @@
 
 @media (max-width: 770px) {
     section {
+        display: flex;
         flex-direction: column; /* Ubah layout menjadi kolom */
         margin: 0px 0; /* Mengurangi margin untuk layar kecil */
-
         margin-top: 0;
     }
 
