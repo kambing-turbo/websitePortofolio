@@ -38,15 +38,15 @@
         width: 7rem; /* Mengurangi lebar tombol */
     }
 
-    .scroll-down {
-        height: 30px; /* Mengurangi ukuran scroll-down */
-        width: 20px; /* Mengurangi ukuran scroll-down */
+    /* .scroll-down {
+        height: 30px;
+        width: 20px;
     }
 
     .scroll-down::before, .scroll-down::after {
-        height: 8px; /* Mengurangi ukuran panah */
-        width: 8px; /* Mengurangi ukuran panah */
-    }
+        height: 8px;
+        width: 8px; 
+    } */
 
     #about{
         margin-top: 5rem;
@@ -142,7 +142,7 @@
 
 }
 
-@media (max-width: 770px) {
+@media (max-width: 820px) {
     section {
         display: flex;
         flex-direction: column; /* Ubah layout menjadi kolom */
@@ -151,10 +151,12 @@
     }
 
     #profile{
-        margin-top: 5rem;
+        margin-top: 0rem;
         height: 100vh;
         width: 100vw;
         gap: 30px;
+        align-items: center;
+        padding-top: 30%;
     }
 
     .section__pic-container{
@@ -163,16 +165,125 @@
         align-content: center;
     }
 
+    #about{
+        margin-top: 5rem;
+        width: 100vw;
+        gap: 30px;
+        flex-direction: column;
+    }
+
+    .about__section__text__p1{
+        font-size: 1rem;
+        margin: 10px;
+        text-align: center;
+    }
+
+    #project{
+        width: 100vw;
+    }
+
+    .project-container{
+        border: 2px solid gray;
+        border-radius: 20px;
+        padding: 10px;
+    }
+
+    .project-pic-container{
+        align-items: center;    
+    }
+
+    .project-pic{
+        width: 200px;
+        height: 200px;
+    }
+
+    .project-text-container{
+        margin: 0px 25px;
+    }
+
+    .project-text-title{
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .project-text{
+        text-align: justify;
+    }
+
+    #getin-touch{
+        width: 100vw;
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .footer-container hr {
+        width: 90%; /* Mengurangi lebar garis pemisah di footer */
+    }
+
+    .project-container {
+        flex-direction: column; /* Ubah layout proyek menjadi kolom */
+        align-items: center; /* Rata tengah konten proyek */
+    }
+
+    .contact-container2{
+        width: 90vw;
+        margin: auto;
+    }
+
+    .contact-container{
+        width: 90vw;
+        margin: auto;
+    }
+
+    .contact-left{
+        width: 90vw;
+        margin: auto;
+    }
+
+    #footer{
+        width: 100vw;
+        height: fit-content;
+        padding: 0;
+    }
+
+    .footer-container{
+        padding: 20px 0;
+    }
+
+}
+
+@media (max-height:536px){
+    section {
+        display: flex;
+        flex-direction: column; /* Ubah layout menjadi kolom */
+        margin: 0 0; /* Mengurangi margin untuk layar kecil */
+        margin-top: 0;
+    }
+
+    #profile{
+        margin-top: 0rem;
+        height: 100vh;
+        width: 100vw;
+        gap: 30px;
+        padding-top: 5%;
+    }
+
+    .section__pic-container{
+        height: 100px;
+        width: 100px;
+        align-content: center;
+    }
+
     .section__text__p1{
-        font-size: 0.75rem;
+        font-size: 0.5rem;
     }
 
     .section__text__p2{
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .title {
-        font-size: 1.8rem; /* Mengurangi ukuran font judul */
+        font-size: 1.5rem; /* Mengurangi ukuran font judul */
     }
 
     .btn {
@@ -181,15 +292,13 @@
     }
 
     .scroll-down {
-        height: 30px; /* Mengurangi ukuran scroll-down */
-        width: 20px; /* Mengurangi ukuran scroll-down */
+        display: none;
     }
 
     .scroll-down::before, .scroll-down::after {
         height: 8px; /* Mengurangi ukuran panah */
         width: 8px; /* Mengurangi ukuran panah */
     }
-
     #about{
         margin-top: 5rem;
         width: 100vw;
@@ -274,5 +383,4 @@
     .footer-container{
         padding: 20px 0;
     }
-
 }
