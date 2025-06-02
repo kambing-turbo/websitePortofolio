@@ -1,0 +1,81 @@
+:root {
+    --amarelo-vale: #000; /* Definisi warna ireng */
+    --abu-abu-track: #666;
+    /* Tambahkan variabel warna lain jika ada */
+}
+
+.progress-arrow-container {
+    border: none;
+    background-color: transparent;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+}
+
+.progress-arrow-container:hover {
+    transform: scale(1.1);
+}
+
+.progress-arrow-container .arrow {
+    width: 20px;
+    height: 20px;
+    border-top: 3px solid var(--amarelo-vale);
+    border-right: 3px solid var(--amarelo-vale);
+    transform: rotate(135deg); /* Panah awal menunjuk ke bawah */
+    transition: transform 0.3s ease-in-out;
+}
+
+.progress-arrow-container.rotate .arrow {
+    transform: rotate(-45deg); /* Panah menunjuk ke atas saat di-rotate */
+}
+
+.progress-arrow-container svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.progress-arrow-container .seta-bar {
+    /* stroke-dasharray dan stroke-dashoffset akan diatur oleh JavaScript */
+    stroke-width: 3px;
+    transition: stroke-dashoffset 0.1s linear;
+    fill: transparent;
+    stroke: var(--amarelo-vale); /* Menggunakan warna kuning untuk progres */
+    transform-origin: 50% 50%; /* Pastikan titik putar di tengah */
+    transform: rotate(-90deg); /* Rotasi awal -90 derajat agar dimulai dari atas */
+}
+
+.progress-arrow-container .seta-track {
+    stroke-width: 3px;
+    fill: transparent;
+    stroke: var(--abu-abu-track); /* Menggunakan warna abu-abu untuk track */
+    transform-origin: 50% 50%; /* Pastikan titik putar di tengah */
+    transform: rotate(-90deg); /* Rotasi awal -90 derajat agar dimulai dari atas */
+}
+
+/* Opsi: Ubah juga warna track saat di tema terang jika diperlukan */
+.progress-arrow-container.light-theme .seta-track {
+    stroke: rgba(255, 255, 255, 0.5); /* Abu-abu terang atau semi-transparan putih */
+}
+
+/* Aksesibilitas */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}

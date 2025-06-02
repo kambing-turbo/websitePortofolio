@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="style/5project.css">
 <link rel="stylesheet" href="style/6getinTouch.css">
 <link rel="stylesheet" href="style/7footer.css">
+<link rel="stylesheet" href="style/8scrollButton.css">
 <link rel="stylesheet" href="style/mediaqueries.css">
 <link rel="icon" type="image/png" href="./assets/icon_HP.png">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
@@ -46,10 +47,10 @@
             class="icon" onclick="location.href='https://github.com/kambing-turbo'">
         </div>
     </div>
-    <div class="scroll-down-link" aria-label="scroll-down" style="visibility: visible;">
+    <!-- <div class="scroll-down-link" aria-label="scroll-down" style="visibility: visible;">
         <div class="scroll-down">
         </div>
-    </div>    
+    </div>     -->
 </section>
 <section id="about">
     <div class="about__text">
@@ -144,7 +145,7 @@
             <div class="contact-social-container2">
                 <button onclick=" location.href='https://www.instagram.com/daffa.safriel/'" style="background: none; border: none;">
                     <i class="fa-brands fa-instagram" style="color: #fff;"></i>
-                  </button>
+                </button>
                 <p class="text-contact-container2" onclick="location.href='https://www.instagram.com/daffa.safriel/'">@daffa.safriel</p>
             </div>
             <div class="contact-social-container2">
@@ -181,8 +182,8 @@
         <div class="footer-social-container">
             <button onclick=" location.href='https://www.instagram.com/daffa.safriel/'" style="background: none; border: none;">
                 <i class="fa-brands fa-instagram" style="color: #fff;"></i>
-              </button>
-              <button onclick=" location.href='https://www.linkedin.com/in/daffa-safriel'" style="background: none; border: none;">
+            </button>
+            <button onclick=" location.href='https://www.linkedin.com/in/daffa-safriel'" style="background: none; border: none;">
                 <i class="fa-brands fa-linkedin" style="color: #fff;"></i>
             </button>
             <button onclick=" location.href='https://github.com/kambing-turbo'" style="background: none; border: none;">
@@ -196,6 +197,15 @@
         </p>
     </div>
 </section>
+<button id="scrollButton" class="progress-arrow-container bg-transparent rounded-circle position-fixed" accesskey="t" tabindex="1">
+    <div class="arrow bg-amarelo-vale text-amarelo-vale contrast-immune"></div>
+    <svg id="seta-ajce-svg" class="position-absolute" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle class="seta-track" cx="32" cy="32" r="29" stroke="var(--abu-abu-track)" stroke-width="2"></circle>
+        <circle class="seta-bar" cx="32" cy="32" r="29" stroke="var(--amarelo-vale)" stroke-width="2"></circle>
+    </svg>
+    <span id="textoBotao" class="buttonSetaRodape sr-only">Ir para o rodapé ALT + T</span>
+</button>
 <script src="script.js"></script>
+<script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
 </body>
 </html>
