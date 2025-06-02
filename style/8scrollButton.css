@@ -19,6 +19,8 @@
     cursor: pointer;
     z-index: 1000;
     transition: transform 0.3s ease-in-out;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .progress-arrow-container:hover {
